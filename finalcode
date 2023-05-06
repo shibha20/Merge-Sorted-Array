@@ -1,0 +1,11 @@
+class Solution(object):
+    def merge(self, nums1, m, nums2, n):
+        zeroslength = len(nums1)-n
+        j=0
+        for i in range(zeroslength,len(nums1)):
+            if zeroslength < (m+n):
+              nums1[i] = nums2[j]
+              j = j+1
+
+        nums1.sort()
+
